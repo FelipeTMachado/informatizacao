@@ -42,6 +42,15 @@ return [
             'synchronous' => null,
         ],
 
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => env('DB_MONGO_HOST', '127.0.0.1'),
+            'port'     => env('DB_MONGO_PORT', 27017),
+            'database' => env('DB_MONGO_DATABASE'),
+            'username' => env('DB_MONGO_USERNAME'),
+            'password' => env('DB_MONGO_PASSWORD'),
+        ],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),
